@@ -7,3 +7,14 @@ function App() {
     latitude: 48.858093,
     zoom: 4
   });
+
+  return <Map
+    {...viewState}
+    onMove={evt => setViewState(evt.viewState)}
+    style={{width: "100vw", height: "100vh"}}
+    mapboxAccessToken={process.env.REACT_APP_MAPBOX}
+    mapStyle="mapbox://styles/mapbox/streets-v9"
+  />;
+}
+
+export default App;
