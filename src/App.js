@@ -1,5 +1,6 @@
 import * as React from 'react';
 import Map, {Marker} from 'react-map-gl';
+import { Room } from "material-ui/icons";
 
 function App() {
   const [viewState, setViewState] = React.useState({
@@ -16,7 +17,7 @@ function App() {
     mapStyle="mapbox://styles/mapbox/streets-v9"
   >
   <Marker longitude={2.294694} latitude={48.858093} anchor="bottom" >
-    <div>Yoffffffffffffffffffffffffffffffffffffffffffffffff</div>
+    <Room/>
   </Marker>
   </Map>;
 }
